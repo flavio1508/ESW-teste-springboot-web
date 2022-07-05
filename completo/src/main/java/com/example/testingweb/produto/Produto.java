@@ -31,5 +31,11 @@ public class Produto extends EntidadeBase {
 
 	public double getValorUnitario() {
 		return valorUnitario;
+	} 
+
+	@Override
+	public boolean equals(Object obj) {
+		Produto objeto = (Produto)obj;
+		return this.descricao.equals(objeto.descricao);
 	}
 }
